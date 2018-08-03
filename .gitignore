@@ -1,0 +1,6 @@
+_site/
+notes.md
+.sass_cache
+.jekyll_cache
+.jekyll_metadata
+.DS_Store
