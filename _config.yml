@@ -1,0 +1,10 @@
+collections:
+  trails:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: trails
+    values:
+      layout: trail
