@@ -1,3 +1,7 @@
+---
+layout: trails
+---
+
 # Routes to Roots
 
 The Routes to Roots project was funded and created in 2018 through a grant of £35,900 from the Heritage Lottery Fund (HLF). Thanks to money raised by National Lottery players, the project aims to greatly raise the profile of Mossley Industrial Heritage Centre by increasing visitor numbers and encouraging children and adults to explore the heritage of Mossley in an engaging and fun way.
@@ -33,7 +37,3 @@ Bugler Bat and Beech Class at St George’s School carried out research that too
 Hannah the Horse and Class 3 at Livingstone Primary School will take you on an incredible journey through time, telling ‘A Horse’s Tale’ of war, buns and bonfires! Did you know that there was a murder in the cinema and an attempted bank robbery in Mossley?
 
 [Follow the trail](/trails/horses-tale)
-
-## Map
-
-Map here
