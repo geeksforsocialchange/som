@@ -22,11 +22,11 @@ The Heritage Lottery Fund awarded a grant to enable the creation of the Mossley 
 
 Our hope is that this look back into the history of the textile industry and social life of Mossley will be illuminating, and we invite you to support Emmaus Mossley in their work by visiting the mill shop and café.
 
-## Who are Emmaus?
-
-Emmaus is an independent charity which provides accommodation and work for previously homeless people through the collection and recycling of donated Edited to focus on household goods which are then repaired and sold. The organisation is an the history of the international federation of over 400 projects worldwide, all working on the same heritage centre, not basis of being self supporting. Emmaus.
-The government helped meet part of the initial running costs but, by the time the heritage centre opened, the Emmaus Mossley business was virtually self sufficient.
-
 ## Volunteer!
 
 We’re always on the lookout for new volunteers to join our team of all ages and abilities, from only two hours a month and up. If you’d like to know more about getting involved, get in touch.
+
+## Proud to be part of Emmaus
+
+Emmaus is an independent charity which provides accommodation and work for previously homeless people through the collection and recycling of donated Edited to focus on household goods which are then repaired and sold. The organisation is an the history of the international federation of over 400 projects worldwide, all working on the same heritage centre, not basis of being self supporting. Emmaus.
+The government helped meet part of the initial running costs but, by the time the heritage centre opened, the Emmaus Mossley business was virtually self sufficient.
