@@ -1,33 +1,15 @@
-<hr>
+<h5>Sponsors</h5>
 
-<p><a href="https://www.facebook.com/mossleycivic/">Follow us on Facebook</a></p>
-
-{% include tinyletter.html %}
-
-<p>Logo</p>
+<ul>
+  {% for sponsor in site.data.sponsors %}
+    <li><a href="{{ sponsor.url }}">{{ sponsor.name }}</a></li>
+  {% endfor %}
+</ul>
 
 <h5>Sitemap</h5>
 
-{% include navigation.html %}
-
-<h5>Legal</h5>
-
 <ul>
-  <li><a href="">Privacy Policy</a></li>
-  <li><a href="">Terms of Service</a></li>
+  <li><a href="/">Home</a></li>
+  <li><a href="/our-story">Our story</a></li>
+  <li><a href="/contact">Get in touch</a></li>
 </ul>
-
-<h5>Mossley Civic Society</h5>
-
-<p>
-  T: 01457 83 8608<br>
-  E: hello@mossleyheritage.org<br><br>
-  Longlands Mill, Queen Street, Mossley,<br>
-  Ashton-under-Lyne OL5 5AH<br><br>
-  &copy; 2018 Mossley Civic Society
-</p>
-
-
-<h5>Sponsors</h5>
-
-<p>HLF | Emmaus</p>

@@ -1,18 +1,14 @@
-# Get in touch
+# If you are interested in being a project volunteer assisting with interviews and exploring the history, please get in touch.
 
-If you’d like to contact us about any aspect of Mossley Heritage please don’t hesitate to say hello.
+**Send an email**
 
-T: 01457 83 8608
-E: hello@mossleyheritage.org
+[contact@ourmothers.org](mailto:contact@ourmothers.org)
 
-Name Email address
-Send message
+**Or send a message**
 
-Mossley Heritage Centre
-Longlands Mill
-Queen Street
-Mossley
-Ashton-under-Lyne
-OL5 5AH
-
-(Map?)
+<form>
+  <input type="text" placeholder="Your name">
+  <input type="email" placeholder="Your email"><br>
+  <textarea placeholder="Your message"></textarea><br>
+  <input type="submit" value="Send message">
+</form>

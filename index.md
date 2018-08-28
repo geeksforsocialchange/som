@@ -1,23 +1,27 @@
-# Mossley: the little, hilly, milly three-cornered town of Lancashire, Yorkshire & Cheshire
+---
+---
 
-Mossley is&hellip; (a little piece on it's importance and why you would visit)
+<div class="hero">
+  <h1 class="hero__title">SoM explores the extrodinary stories of white women in interracial relationships from 1940-2000. These previously ignored histories give a fresh insight into our social attitudes to race relations in the UK.</h1>
 
-[Learn more about our history]()
+  <a href="/our-story" class="hero__btn btn">Our story</a>
 
-## Take a walk on our heritage trails
+  <div class="hero__caption">
+    <strong>Photo:</strong> Mrs Ada next to her husband Alfred Lawrence (Anya) in his circus outfit in the 1930s.<br>
+    Courtesy of their daughter Coca Clarke.
+  </div>
+</div>
 
-Find out more about Mossley with the Heritage Trails around the town. You might have seen the signs already!
+<h2>We are still gathering interviews for the 2018 launch. Below are some of the women whose chapters have been completed.</h2>
 
-[Learn more](/trails)
+<hr>
 
-## Visit our heritage centre
-
-Take a trip down memory lane and discover the rich history of Mossley and the surrounding area at the Mossley Heritage Centre, located in the corner of one of Mossley’s oldest mills.
-
-[Learn more](/visit)
-
-## Join the Civic Society
-
-Founded in 1966, the society has been involved in all sorts around Mossley over the years. From footpath inspection and scrutiny of planning applications to presentations and working with local schools.
-
-[Learn more](civic-society)
+<ul class="women">
+  {% for woman in site.data.women %}
+    <li class="woman">
+      <h3 class="woman__name">{{ woman.name }}</h3>
+      <p class="woman__dob">{{ woman.dob }}</p>
+      <p class="woman__caption">{{ woman.caption }}</p>
+    </li>
+  {% endfor %}
+</ul>
