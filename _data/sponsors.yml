@@ -1,15 +1,15 @@
 - name: Heritage Lottery Funded
   url: https://www.hlf.org.uk/
-  logo:
+  logo: hlf.png
 - name: Manchester Cathedral
   url: http://www.manchestercathedral.org/
-  logo:
+  logo: mcr-cathedral.png
 - name: Manchester Metropolitan University
   url: https://www2.mmu.ac.uk/
-  logo:
+  logo: mmu.png
 - name: National Black Arts Alliance
   url: https://sites.google.com/gfsc.studio/nbaa/home
-  logo:
+  logo: nbaa.png
 - name: Ahmed Iqbal Ullah Education Trust
   url: http://www.racearchive.org.uk/
-  logo:
+  logo: ahmed-iqbal.png

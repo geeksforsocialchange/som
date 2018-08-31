@@ -10,13 +10,15 @@
 </head>
 <body>
   <header class="header">
-    <img src="/assets/icons/logo.svg" alt="SoM Logo" class="header__logo">
-    {% include navigation.html %}
+    <div class="content">
+      <img src="/assets/icons/logo.svg" alt="SoM Logo" class="header__logo">
+      {% include navigation.html %}
+    </div>
   </header>
   <main>
     {{ content }}
   </main>
-  <footer>
+  <footer class="footer">
     {% include footer.html %}
   </footer>
 </body>

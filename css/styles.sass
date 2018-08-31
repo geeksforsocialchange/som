@@ -4,6 +4,7 @@
 $primary: #C9AA85
 $secondary: #222
 $white: #fff
+$hero-bg: unquote('#C9AA8577')
 
 $regular: 400
 $medium: 500
@@ -16,6 +17,8 @@ $semibold: 600
   +for-tablet-portrait-up
     margin-left: 3rem
     margin-right: 3rem
+  +for-big-desktop-up
+    margin: 0 auto
 
 =gutter-padding
   padding-left: 1.5rem
@@ -63,6 +66,8 @@ body
   color: $secondary
   line-height: 1.375
   letter-spacing: -0.02rem
+  +for-desktop-up
+    font-size: 1.25rem
 
 // Wrapper / reset classes
 ul.reset
@@ -92,9 +97,11 @@ h2
   line-height: 1.2
   text-align: center
   font-weight: $medium
-  margin: 2rem 0
+  margin: 3rem 0
   +for-tablet-portrait-up
     font-size: 1.5rem
+  +for-tablet-landscape-up
+    font-size: 2rem
 
 h3
   font-size: 1.5rem
@@ -102,6 +109,8 @@ h3
   letter-spacing: -0.025rem
   +for-tablet-portrait-up
     font-size: 1.25rem
+  +for-desktop-up
+    font-size: 1.5rem
 
 a
   color: $primary
@@ -112,6 +121,16 @@ strong
 hr
   border: 5px solid $primary
 
+.narrow
+  +for-tablet-landscape-up
+    // 10 of 12 cols
+    max-width: 83%
+    margin-left: auto
+    margin-right: auto
+  +for-desktop-up
+    // 8 of 12 cols
+    max-width: 66.66667%
+
 // Specific components
 
 .header
@@ -120,9 +139,12 @@ hr
   font-size: 1.125rem
   padding: 3rem 0
   &__logo
-    max-width: 50%
     width: 8.31rem
     margin-bottom: 2rem
+    +for-tablet-portrait-up
+      margin-bottom: 0
+    +for-desktop-up
+      width: 13.875rem
   li
     display: inline-block
   a
@@ -130,12 +152,25 @@ hr
     color: $secondary
     text-decoration: none
     margin: 0 0.5rem
+    +for-tablet-landscape-up
+      margin: 0 0 0 1.5rem
     padding-bottom: 0.25rem
     &:hover
       border-bottom: 5px solid $white
+  @supports (display: grid)
+    +for-tablet-portrait-up
+      text-align: left
+      .content
+        display: grid
+        grid-template-columns: auto 1fr
+        align-items: center
+      .header__nav
+        text-align: right
+        font-size: 1.25rem
+
 .hero
   padding: 2rem 0
-  background-color: #C9AA8577
+  background-color: $hero-bg
   background-repeat: no-repeat
   background-size: cover
   +gutter-padding
@@ -151,20 +186,19 @@ hr
 
   &__title
     color: $white
-    +for-tablet-landscape-up
-      // 10 of 12 cols
-      max-width: 83%
-      margin-left: auto
-      margin-right: auto
-    +for-desktop-up
-      // 8 of 12 cols
-      max-width: 66.66667%
   &__caption
     color: $primary
     text-align: center
     background: $secondary
     padding: 1.5rem
     font-size: 0.75rem
+  &__caption-text
+    +for-tablet-portrait-up
+      width: 66.6667%
+      margin: 0 auto
+    +for-desktop-up
+      width: 50%
+  // Background images
   background-image: url('/assets/hero-pic/mobile.jpg')
   +for-tablet-portrait-up
     background-image: url('/assets/hero-pic/tablet-portrait.jpg')
@@ -196,6 +230,55 @@ hr
     font-size: 1.25rem
     +for-tablet-portrait-up
       font-size: 1rem
+    +for-desktop-up
+      font-size: 1.25rem
     margin-bottom: 1rem
   &__caption
     margin: 1.5rem 0 0
+
+.footer
+  margin-top: 10rem
+  padding: 2rem 0
+  color: $white
+  background-color: $secondary
+  font-size: 0.9rem
+  h5
+    display: none
+  hr
+    border-width: 1px
+  a
+    color: $white
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+  &__sitemap
+    +for-phone-only
+      display: none
+    display: inline-block
+    vertical-align: middle
+    li
+      display: inline-block
+  &__logo
+    width: 3.5625rem
+    +for-phone-only
+      margin-bottom: 1rem
+  &__facebook
+    display: block
+    margin: 1rem 0
+    display: grid
+    grid-template-columns: auto 1fr
+    grid-gap: 1rem
+    align-items: center
+
+.sponsors
+  display: grid
+  margin: 3rem 0 !important
+  grid-template-columns: repeat(auto-fill, minmax(128px, 1fr))
+  grid-gap: 2rem 0
+  align-items: center
+  text-align: center
+  +for-tablet-portrait-up
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
