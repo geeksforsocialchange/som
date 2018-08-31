@@ -22,21 +22,23 @@
 
   <hr class="fgrid__hr-2">
 
-  <div class="content fgrid__sponsors">
-    <h5>Sponsors</h5>
+  <div class="fgrid__sponsors">
+    <div class="content">
+      <h5>Sponsors</h5>
 
-    <ul class="sponsors reset">
-      {% for sponsor in site.data.sponsors %}
-        <li>
-          <a href="{{ sponsor.url }}">
-            <img src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}'s logo'">
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+      <ul class="sponsors reset">
+        {% for sponsor in site.data.sponsors %}
+          <li>
+            <a href="{{ sponsor.url }}">
+              <img src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}'s logo'">
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
 
-  </div>
-  <div class="content fgrid__copyright">
-    <p>Copyright &copy; 2018 National Black Arts Alliance</p>
+    </div>
+    <div class="content fgrid__copyright">
+      <p>Copyright &copy; 2018 National Black Arts Alliance</p>
+    </div>
   </div>
 </div>
