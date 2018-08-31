@@ -1,35 +1,42 @@
-<div class="content footer__sitemap-wrapper">
-  <img src="/assets/icons/logo-footer.svg" alt="SoM logo" class="footer__logo">
-  <h5>Sitemap</h5>
+<div class="fgrid">
 
-  <ul class="reset footer__sitemap">
-    <li><a href="/">Home</a></li>
-    <li><a href="/our-story">Our story</a></li>
-    <li><a href="/contact">Get in touch</a></li>
-  </ul>
-</div>
+  <div class="content fgrid__sitemap">
+    <img src="/assets/icons/logo-footer.svg" alt="SoM logo" class="footer__logo">
+    <h5>Sitemap</h5>
 
-<hr>
+    <ul class="reset footer__sitemap">
+      <li><a href="/">Home</a></li>
+      <li><a href="/our-story">Our story</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
 
-<div class="content">
-  <a href="https://facebook.com/somNBAA" class="footer__facebook">
-    <img src="/assets/icons/facebook.svg" role="presentation">
-    Follow us on Facebook
-  </a>
-</div>
-<hr>
-<div class="content">
-  <h5>Sponsors</h5>
+  <hr class="fgrid__hr-1">
 
-  <ul class="sponsors reset">
-    {% for sponsor in site.data.sponsors %}
-      <li>
-        <a href="{{ sponsor.url }}">
-          <img src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}'s logo'">
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="content fgrid__facebook">
+    <a href="https://facebook.com/somNBAA" class="footer__facebook">
+      <img src="/assets/icons/facebook.svg" role="presentation">
+      Follow us on Facebook
+    </a>
+  </div>
 
-  <p>Copyright &copy; 2018 National Black Arts Alliance</p>
+  <hr class="fgrid__hr-2">
+
+  <div class="content fgrid__sponsors">
+    <h5>Sponsors</h5>
+
+    <ul class="sponsors reset">
+      {% for sponsor in site.data.sponsors %}
+        <li>
+          <a href="{{ sponsor.url }}">
+            <img src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}'s logo'">
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+  <div class="content fgrid__copyright">
+    <p>Copyright &copy; 2018 National Black Arts Alliance</p>
+  </div>
 </div>

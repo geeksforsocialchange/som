@@ -18,7 +18,8 @@ $semibold: 600
     margin-left: 3rem
     margin-right: 3rem
   +for-big-desktop-up
-    margin: 0 auto
+    margin-left: auto
+    margin-right: auto
 
 =gutter-padding
   padding-left: 1.5rem
@@ -91,6 +92,10 @@ h1
   +for-desktop-up
     font-size: 2.5rem
 
+h1.space
+  margin-top: 3rem
+  margin-bottom: 3rem
+
 h2
   font-size: 1.25rem
   letter-spacing: -0.0156rem
@@ -131,8 +136,36 @@ hr
     // 8 of 12 cols
     max-width: 66.66667%
 
-// Specific components
+.center
+  text-align: center
 
+.btn
+  display: inline-block
+  font-size: 1.125rem
+  padding: 0.6rem 2rem
+  font-weight: $medium
+  background-color: $primary
+  color: $white
+  text-decoration: none
+  border: 3px solid $primary
+  &:hover
+    background-color: $white
+    color: $secondary
+
+.space
+  margin-top: 3rem
+
+a.underline
+  text-decoration: underline
+  text-decoration-color: $primary
+  color: $secondary
+  &:hover
+    color: $primary
+
+.bigger
+  font-size: 1.25rem
+
+// Specific components
 .header
   background-color: $primary
   text-align: center
@@ -164,6 +197,9 @@ hr
         display: grid
         grid-template-columns: auto 1fr
         align-items: center
+        +for-desktop-up
+          width: 83.3333%
+          margin: 0 auto
       .header__nav
         text-align: right
         font-size: 1.25rem
@@ -236,12 +272,28 @@ hr
   &__caption
     margin: 1.5rem 0 0
 
+// Our Story
+.story-img
+  text-align: center
+  +for-tablet-portrait-up
+    +gutter
+  img
+    width: 100%
+    +for-tablet-portrait-up
+      width: 66.66667%
+
+.caption
+  text-align: center
+  color: $primary
+  font-size: 0.8rem
+  margin-bottom: 2rem
+
 .footer
   margin-top: 10rem
   padding: 2rem 0
   color: $white
   background-color: $secondary
-  font-size: 0.9rem
+  font-size: 0.8rem
   h5
     display: none
   hr
@@ -258,8 +310,10 @@ hr
     vertical-align: middle
     li
       display: inline-block
+      margin-right: 1rem
   &__logo
     width: 3.5625rem
+    margin-right: 2rem
     +for-phone-only
       margin-bottom: 1rem
   &__facebook
@@ -270,9 +324,44 @@ hr
     grid-gap: 1rem
     align-items: center
 
+.fgrid
+  display: grid
+  +for-tablet-portrait-up
+    grid-gap: 1rem
+  grid-template-areas: "sitemap" "hr-1" "facebook" "hr-2" "sponsors" "copyright"
+  hr
+    width: 100%
+  &__sitemap
+    grid-area: sitemap
+    display: grid
+    grid-gap: 1rem
+    grid-template-columns: auto 1fr
+    align-items: center
+  &__hr-1
+    grid-area: hr-1
+  &__facebook
+    grid-area: facebook
+    +for-tablet-portrait-up
+      justify-self: end
+  &__hr-2
+    grid-area: hr-2
+  &__sponsors
+    grid-area: sponsors
+  &__copyright
+    grid-area: copyright
+  +for-tablet-portrait-up
+    grid-template-columns: auto 1fr
+    align-items: center
+    grid-template-areas: "sitemap facebook" "hr-1 hr-1" "sponsors sponsors" "copyright copyright"
+    .fgrid__hr-2
+      display: none
+  +for-desktop-up
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-areas: "sitemap facebook copyright" "hr-1 hr-1 hr-1" "sponsors sponsors sponsors"
+
 .sponsors
   display: grid
-  margin: 3rem 0 !important
+  margin: 1rem 0 !important
   grid-template-columns: repeat(auto-fill, minmax(128px, 1fr))
   grid-gap: 2rem 0
   align-items: center
@@ -282,3 +371,40 @@ hr
     justify-content: space-between
     align-items: center
     flex-wrap: wrap
+
+// Contact page
+.form
+  text-align: center
+  font-size: 1rem
+  font-weight: $medium
+  box-sizing: border-box
+  &__input, label
+    display: block
+  label
+    margin-bottom: 0.5rem
+  &__input
+    margin: 0 0 2rem
+    font-size: 1.5rem
+    padding: 0.25rem
+    width: 100%
+    border: 3px solid $primary
+    +for-tablet-portrait-up
+      width: 66.6667%
+      margin-left: auto
+      margin-right: auto
+      &--textarea
+        width: 82%
+      &--submit
+        width: 83.33333%
+    +for-tablet-landscape-up
+      width: 33.33333%
+      &--textarea
+        width: 65.6%
+      &--submit
+        width: 66.6666%
+
+    &--submit
+      font-size: 1.25rem
+      padding: 0.6rem 2rem
+      font-family: inherit
+      cursor: pointer
