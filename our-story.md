@@ -15,8 +15,8 @@
   <p class="caption"><strong>Photo:</strong> Mrs Ada next to her husband Alfred Lawrence (Anya) in his circus outfit in the 1930s.<br> Courtesy of their daughter Coca Clarke.</p>
 </div>
 
-<div class="content" markdown="1">
-
+<div class="content">
+  <div class="narrow" markdown="1">
 SOM documents the lives of twenty four white women based in Greater Manchester who were in interracial relationships with Africans during the 1940s to 1960s, then the 1960s to 1980s and then 1980s to 2000 which will include Caribbean migration.
 
 Too often the mothers' experiences have been overlooked and they are amazing stories of love, endurance and often rejection by their own families.  Their narratives are important accounts of social attitudes to race relations.
@@ -28,5 +28,5 @@ NBAA welcomes suggestions of mothers or their surviving family for interviews.
 <div class="center space">
   <a href="/contact" class="btn space">Get in touch</a>
 </div>
-
+</div>
 </div>
