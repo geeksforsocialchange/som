@@ -53,7 +53,7 @@ $semibold: 600
     @content
 
 =for-big-desktop-up
-  @media (min-width: 1920px)
+  @media (min-width: 1550px)
     @content
 
 =for-print
@@ -178,8 +178,13 @@ a.underline
       margin-bottom: 0
     +for-desktop-up
       width: 13.875rem
+    +for-big-desktop-up
+      margin-left: 5rem
   li
     display: inline-block
+  &__nav
+    +for-big-desktop-up
+      margin-right: 5rem
   &__nav a
     font-weight: $medium
     color: $secondary
@@ -188,7 +193,7 @@ a.underline
     +for-tablet-landscape-up
       margin: 0 0 0 1.5rem
     padding-bottom: 0.25rem
-    &:hover
+    &:hover, &.active
       border-bottom: 5px solid $white
   @supports (display: grid)
     +for-tablet-portrait-up
@@ -209,8 +214,8 @@ a.underline
   background-color: $hero-bg
   background-repeat: no-repeat
   background-size: cover
+  max-width: 1920px
   +gutter-padding
-
   +for-tablet-portrait-up
     padding: 5rem 0
   +for-desktop-up
@@ -220,7 +225,6 @@ a.underline
     // Height of image minus double our padding
     min-height: calc(678px - 16rem)
   +for-big-desktop-up
-    max-width: 1920px
     margin: 0 auto
   &__wrapper
     background-color: $hero-bg
@@ -348,12 +352,16 @@ a.underline
     grid-area: facebook
     +for-tablet-portrait-up
       justify-self: end
+    +for-desktop-up
+      justify-self: center
   &__hr-2
     grid-area: hr-2
   &__sponsors
     grid-area: sponsors
   &__copyright
     grid-area: copyright
+    +for-desktop-up
+      justify-self: end
   +for-tablet-portrait-up
     grid-template-columns: auto 1fr
     align-items: center
@@ -363,6 +371,29 @@ a.underline
   +for-desktop-up
     grid-template-columns: 1fr 1fr 1fr
     grid-template-areas: "sitemap facebook copyright" "hr-1 hr-1 hr-1" "sponsors sponsors sponsors"
+  +for-big-desktop-up
+    grid-template-columns: auto repeat(3, 26rem) auto
+    grid-template-areas: ". sitemap facebook copyright ." "hr-1 hr-1 hr-1 hr-1 hr-1" ". sponsors sponsors sponsors ."
+  // Spacing for top section
+  +for-phone-only
+    &__sitemap, &__facebook, &__copyright
+      margin-left: 1.5rem
+      margin-right: 1.5rem
+  +for-tablet-portrait-up
+    &__sitemap
+      margin-left: 3rem
+    &__facebook
+      margin-right: 3rem
+  +for-desktop-up
+    &__facebook
+      margin-right: 0
+    &__copyright
+      margin-right: 3rem
+  +for-big-desktop-up
+    &__sitemap
+      margin-left: 0
+    &__copyright
+      margin-right: 0
 
 .sponsors
   display: grid

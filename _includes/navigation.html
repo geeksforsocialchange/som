@@ -1,7 +1,9 @@
 <nav role="navigation" class="header__nav">
   <ul class="reset">
-    <li><a href="/">Home</a></li>
-    <li><a href="/our-story">Our story</a></li>
-    <li><a href="/contact">Get in touch</a></li>
+    {% for item in site.data.navigation %}
+      <li>
+        <a href="{{ item.url }}" class="{% if item.url == page.url %}active{% endif %}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
   </ul>
 </nav>
