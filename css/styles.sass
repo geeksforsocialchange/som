@@ -4,7 +4,7 @@
 $primary: #C9AA85
 $secondary: #222
 $white: #fff
-$hero-bg: unquote('#C9AA8577')
+$hero-bg: unquote('#C9AA8580')
 
 $regular: 400
 $medium: 500
@@ -53,7 +53,7 @@ $semibold: 600
     @content
 
 =for-big-desktop-up
-  @media (min-width: 1800px)
+  @media (min-width: 1920px)
     @content
 
 =for-print
@@ -219,6 +219,11 @@ a.underline
     padding: 8rem 0
     // Height of image minus double our padding
     min-height: calc(678px - 16rem)
+  +for-big-desktop-up
+    max-width: 1920px
+    margin: 0 auto
+  &__wrapper
+    background-color: $hero-bg
 
   &__title
     color: $white

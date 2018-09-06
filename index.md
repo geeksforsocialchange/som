@@ -1,10 +1,12 @@
 ---
 ---
 
-<div class="hero">
-  <div class="content">
-    <h1 class="hero__title narrow">SoM explores the extrodinary stories of white women in interracial relationships from 1940-2000. These previously ignored histories give a fresh insight into our social attitudes to race relations in the UK.</h1>
-    <!-- <a href="/our-story" class="hero__btn btn">Our story</a> -->
+<div class="hero__wrapper">
+  <div class="hero">
+    <div class="content">
+      <h1 class="hero__title narrow">SoM explores the extrodinary stories of white women in interracial relationships from 1940-2000. These previously ignored histories give a fresh insight into our social attitudes to race relations in the UK.</h1>
+      <!-- <a href="/our-story" class="hero__btn btn">Our story</a> -->
+    </div>
   </div>
 </div>
 <div class="hero__caption">
