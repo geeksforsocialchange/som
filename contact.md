@@ -1,5 +1,5 @@
 <div class="content">
-  <h1 class="narrow space">If you are interested in being a project volunteer assisting with interviews and exploring the history, please get in touch.</h1>
+  <h1 class="narrow space">If you are interested in being a project volunteer or want to tell us your story, please get in touch.</h1>
 </div>
 
 <div class="content center bigger" markdown="1">
