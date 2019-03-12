@@ -19,7 +19,9 @@
 <div class="content">
   <h2 class="narrow">We are still gathering interviews for the 2018 launch. Below are some of the women whose chapters have been completed.</h2>
 </div>
+
 <hr>
+
 <div class="content">
   <ul class="women reset">
     {% for woman in site.data.women %}
