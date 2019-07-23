@@ -24,11 +24,9 @@ $semibold: 600
     margin-right: auto
 
 =gutter-padding
-  padding-left: 1.5rem
-  padding-right: 1.5rem
+  padding: 1.5rem
   +for-tablet-portrait-up
-    padding-left: 3rem
-    padding-right: 3rem
+    padding: 1.5rem 3rem
 
 // Breakpoints
 
@@ -69,6 +67,8 @@ body
   color: $secondary
   line-height: 1.375
   letter-spacing: -0.02rem
+  overflow-x: hidden
+  // overflow: hidden
   +for-desktop-up
     font-size: 1.25rem
 
@@ -82,6 +82,10 @@ ul.reset
   max-width: $page-max-width
   +gutter
 
+.content-padding
+  max-width: $page-max-width
+  +gutter-padding
+
 // HTML element defaults
 h1
   font-size: 1.5rem
@@ -90,15 +94,15 @@ h1
   line-height: 1.0833
   font-weight: $medium
   +for-tablet-portrait-up
-    font-size: 2rem
+    font-size: 4rem
   +for-desktop-up
-    font-size: 2.5rem
+    font-size: 4.5rem
 
 h1.space
   margin-top: 3rem
   margin-bottom: 3rem
 
-h2
+h2, .h2
   font-size: 1.25rem
   letter-spacing: -0.0156rem
   line-height: 1.2
@@ -128,6 +132,15 @@ strong
 hr
   border: 5px solid $primary
 
+blockquote
+  text-align: center
+
+cite
+  display: block
+  text-align: center
+  font-style: normal
+  color: $primary
+
 .narrow
   +for-tablet-landscape-up
     // 10 of 12 cols
@@ -138,21 +151,34 @@ hr
     // 8 of 12 cols
     max-width: 66.66667%
 
+.x-narrow
+  +for-tablet-landscape-up
+    // 10 of 12 cols
+    max-width: 83%
+    margin-left: auto
+    margin-right: auto
+  +for-desktop-up
+    // 6 of 12 cols
+    max-width: 50%
+
 .center
   text-align: center
 
 .btn
-  display: inline-block
-  font-size: 1.125rem
-  padding: 0.6rem 2rem
-  font-weight: $medium
-  background-color: $primary
-  color: $white
-  text-decoration: none
-  border: 3px solid $primary
-  &:hover
-    background-color: $white
-    color: $secondary
+  text-align: center
+  a
+    display: inline-block
+    font-size: 1.125rem
+    padding: 0.6rem 2rem
+    font-weight: $medium
+    background-color: $primary
+    color: $white
+    text-decoration: none
+    border: 3px solid $primary
+    border-radius: 2rem
+    &:hover
+      background-color: $white
+      color: $secondary
 
 .space
   margin-top: 3rem
@@ -166,6 +192,14 @@ a.underline
 
 .bigger
   font-size: 1.25rem
+
+.theme-2
+  background-color: $secondary
+  color: $white
+
+.theme-3
+  background-color: $primary
+
 
 // Specific components
 .header
@@ -450,3 +484,16 @@ a.underline
       padding: 0.6rem 2rem
       font-family: inherit
       cursor: pointer
+
+.youtube
+  position: relative
+  padding-bottom: 56.25%
+  padding-top: 25px
+  height: 0
+  margin-bottom: 3rem
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
