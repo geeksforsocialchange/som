@@ -24,12 +24,14 @@
       <a href="#about">Learn more about the project</a>
     </p>
   </div>
+  <br>
 </section>
 
 <hr>
 
 <section id="women">
   <div class="content">
+    <br>
     <ul class="women reset">
       {% for woman in site.data.women %}
         <li class="woman">
@@ -41,20 +43,21 @@
       {% endfor %}
     </ul>
   </div>
+  <br><br>
 </section>
 
 <section>
   <div class="theme-2">
-    <div class="content-padding">
+    <div class="content content--padding">
       <h2 class="narrow">Every picture tells a story. Here are the families' images captured over the years full of memories.</h2>
-      {% include youtube.html id='R5jIoLnL_nE' %}
+      {% include youtube.html id='YeWn7wzLJTk' %}
     </div>
   </div>
 </section>
 
 <section id="launch">
   <div class="theme-3">
-    <div class="content-padding">
+    <div class="content content--padding">
       <h1>The launch</h1>
     </div>
   </div>
@@ -63,33 +66,36 @@
     <p class="h2 narrow">Held at HOME on May 19th 2019, 140 family members joined us for the launch event.</p>
 
     <div class="photos">
-      <img src="https://placekitten.com/367/246">
-      <img src="https://placekitten.com/367/246">
-      <img src="https://placekitten.com/367/246">
+      <img src="/assets/launch/launch1.jpg">
+      <img src="/assets/launch/launch2.jpg">
+      <img src="/assets/launch/launch3.jpg">
     </div>
-
+    <br>
     <p class="narrow">The event was an afternoon of performances of poetry, dance and song and a unique one-act play scripted verbatim from all the interviews bringing the lives of the mothers live to the stage for a one-off unique performance now captured on film.</p>
-
+    <br>
     <div class="photos">
-      <img src="https://placekitten.com/367/246">
-      <img src="https://placekitten.com/367/246">
-      <img src="https://placekitten.com/367/246">
+      <img src="/assets/launch/launch4.jpg">
+      <img src="/assets/launch/launch5.jpg">
+      <img src="/assets/launch/launch6.jpg">
     </div>
-
-    <div class="narrow">
-      {% include youtube.html id='R5jIoLnL_nE' %}
+    <br>
+    <div class="narrow center">
+      <!-- {% include youtube.html id='R5jIoLnL_nE' %} -->
+      <h3>Launch video coming soon!</h3>
     </div>
+    <br>
   </div>
 </section>
 
 <section id="book">
   <div class="theme-3">
-    <div class="content-padding">
+    <div class="content content--padding">
       <h1>The book</h1>
     </div>
   </div>
 
   <div class="content">
+    <br>
     <blockquote class="x-narrow">
       <p>This collection of stories is about love.</p>
 
@@ -103,9 +109,12 @@
 
     <p class="h2">Strength of Our Mothers</p>
     <p class="center"><strong>ISBN</strong> 978-1-78972-129-4</p>
+
     <p class="btn">
       <a href="/assets/strength-of-our-mothers.pdf">Download the PDF</a>
     </p>
+
+    <br>
 
     <p class="x-narrow">
       <strong>Hard copies can only be collected in person from:</strong><br>
@@ -122,10 +131,12 @@
   </div>
 </section>
 
+<br><br><br>
 <hr>
 
 <section id="about">
   <div class="content">
+    <br>
     <h1 class="h2">Background on the project</h1>
 
     <p class="narrow">SOM does not fictionalise life but tells it just as we live it. Sometimes it is cruel and heart-breaking but even then, families pull on through. In many cases hardship and heartache makes the bond of family stronger, especially when Mothers stepped away from the relationship into single parenthood. Fathers too became the sole carer of their children when mothers left because they couldn’t or didn’t want to stay in the home.</p>
@@ -134,6 +145,8 @@
 
     <p class="narrow">NBAA is the UK’s largest network of Black artists established in 1985 it exists to combat negative attitudes to Black arts and culture. Its heritage work in social history contributes to debates around migration, interracial marriage, and class to challenge racist narratives.</p>
 
+    <br><br>
+    
     <p class="btn">
       <a href="#women">Back to the women</a>
     </p>
