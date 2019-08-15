@@ -146,10 +146,21 @@
 
     <p class="narrow">NBAA is the UK’s largest network of Black artists established in 1985 it exists to combat negative attitudes to Black arts and culture. Its heritage work in social history contributes to debates around migration, interracial marriage, and class to challenge racist narratives.</p>
 
-    <br><br>
-
     <p class="btn">
       <a href="#women">Back to the women</a>
     </p>
+
+    <br>
+
+    <h1 class="h2">Send us feedback</h1>
+
+    <p class="narrow">Do you have any feedback about the book, the launch, or the project as a whole? Please let us know with the following form.</p>
+
+    <p class="btn">
+      <a href="https://forms.gle/Un3S4B9L7zf6Rq4X7">Feedback form</a>
+    </p>
+
+
+
   </div>
 </section>
