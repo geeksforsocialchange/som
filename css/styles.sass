@@ -87,7 +87,7 @@ ul.reset
 
 // HTML element defaults
 h1
-  font-size: 1.5rem
+  font-size: 2.5rem
   text-align: center
   letter-spacing: -0.015rem
   line-height: 1.0833
@@ -206,6 +206,13 @@ a.underline
   &:hover
     color: $primary
 
+.no-bottom-margin
+  margin-bottom: 0
+  padding-bottom: 0
+  + p
+    margin-top: 0.25rem
+    font-size: 0.8rem
+
 .bigger
   font-size: 1.25rem
 
@@ -280,7 +287,6 @@ a.underline
     margin: 0 auto
   &__wrapper
     background-color: $hero-bg
-
   &__title
     color: $white
   &__caption
@@ -520,10 +526,20 @@ a.underline
   img
     width: 30%
 
+.book
+  width: 100%
+  height: 300px
+  +for-tablet-portrait-up
+    height: 500px
+  +for-desktop-up
+    height: 700px
+
 @supports(display: grid)
   .photos
     display: grid
     grid-gap: 1.5rem
-    grid-template-columns: 1fr 1fr 1fr
+    grid-template-columns: 1fr
+    +for-tablet-portrait-up
+      grid-template-columns: 1fr 1fr 1fr
     img
       width: 100%

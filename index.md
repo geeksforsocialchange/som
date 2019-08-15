@@ -52,6 +52,7 @@
       <h2 class="narrow">Every picture tells a story. Here are the families' images captured over the years full of memories.</h2>
       {% include youtube.html id='YeWn7wzLJTk' %}
     </div>
+    <br>
   </div>
 </section>
 
@@ -104,10 +105,10 @@
       <p>Like all hidden histories, these stories represent living knowledge that can inform future generations and can help us think differently about the experiences of children from interracial relationships.</p>
     </blockquote>
     <cite>Edited review by Kate Pahl<br> MMU Professor of Arts and Literacy</cite>
-
+    <br><br>
     {% include book.html %}
 
-    <p class="h2">Strength of Our Mothers</p>
+    <p class="h2 no-bottom-margin">Strength of Our Mothers</p>
     <p class="center"><strong>ISBN</strong> 978-1-78972-129-4</p>
 
     <p class="btn">
@@ -146,7 +147,7 @@
     <p class="narrow">NBAA is the UK’s largest network of Black artists established in 1985 it exists to combat negative attitudes to Black arts and culture. Its heritage work in social history contributes to debates around migration, interracial marriage, and class to challenge racist narratives.</p>
 
     <br><br>
-    
+
     <p class="btn">
       <a href="#women">Back to the women</a>
     </p>
