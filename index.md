@@ -81,8 +81,8 @@
     </div>
     <br>
     <div class="narrow center">
-      <!-- {% include youtube.html id='R5jIoLnL_nE' %} -->
-      <h3>Launch video coming soon!</h3>
+      <br>
+      {% include youtube.html id='wzTHyhEwmGs' %}
     </div>
     <br>
   </div>
