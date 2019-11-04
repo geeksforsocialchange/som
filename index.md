@@ -56,7 +56,7 @@
   </div>
 </section>
 
-<section id="launch">
+<section id="performances">
   <div class="theme-3">
     <div class="content content--padding">
       <h1>The launch</h1>
