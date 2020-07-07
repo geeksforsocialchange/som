@@ -81,6 +81,7 @@
     </div>
     <br>
     <div class="narrow center">
+        <p><em>Please be advised that the play that forms part of this performance reel contains offensive racist language. Such language definitely does not reflect the attitude of NBAA, the actors nor the women they portray but are the actual words that were used to abuse the mothers.</em></p>
       <br>
       {% include youtube.html id='wzTHyhEwmGs' %}
     </div>
