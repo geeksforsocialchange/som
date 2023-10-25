@@ -3,7 +3,7 @@
 
 $page-max-width: 71.25rem
 
-$primary: #C9AA85
+$primary: #f49627
 $secondary: #222
 $white: #fff
 $hero-bg: unquote('#C9AA8580')
@@ -223,7 +223,6 @@ a.underline
 .theme-3
   background-color: $primary
 
-
 // Specific components
 .header
   background-color: $primary
@@ -302,7 +301,7 @@ a.underline
     +for-desktop-up
       width: 50%
   // Background images
-  background-image: url('/assets/hero-pic/mobile.jpg')
+    background-image: url('/assets/hero-pic/mobile.jpg')
   +for-tablet-portrait-up
     background-image: url('/assets/hero-pic/tablet-portrait.jpg')
   +for-tablet-landscape-up
@@ -433,7 +432,7 @@ a.underline
     grid-template-areas: "sitemap facebook copyright" "hr-1 hr-1 hr-1" "sponsors sponsors sponsors"
   +for-big-desktop-up
     grid-template-columns: auto 22rem 16rem 22rem auto
-    grid-template-areas: ". sitemap facebook copyright ." "hr-1 hr-1 hr-1 hr-1 hr-1" ". sponsors sponsors sponsors ."
+    grid-template-areas: ".sitemap facebook copyright ." "hr-1 hr-1 hr-1 hr-1 hr-1" ".sponsors sponsors sponsors ."
   // Spacing for top section
   +for-phone-only
     &__sitemap, &__facebook, &__copyright

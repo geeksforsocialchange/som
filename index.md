@@ -1,6 +1,3 @@
----
----
-
 <section>
   <div class="hero__wrapper">
     <div class="hero">
@@ -86,6 +83,7 @@
       {% include youtube.html id='wzTHyhEwmGs' %}
     </div>
     <br>
+
   </div>
 </section>
 
@@ -130,10 +128,12 @@
       <br>
       By post email <a href="mailto:contact@ourmothers.org">contact@ourmothers.org</a>
     </p>
+
   </div>
 </section>
 
 <br><br><br>
+
 <hr>
 
 <section id="about">
@@ -160,8 +160,6 @@
     <p class="btn">
       <a href="https://forms.gle/Un3S4B9L7zf6Rq4X7">Feedback form</a>
     </p>
-
-
 
   </div>
 </section>
